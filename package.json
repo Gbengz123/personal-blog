@@ -1,0 +1,20 @@
+{
+  "name": "personal-blog",
+  "version": "1.0.0",
+  "description": "fullstack personal blog site built with react and express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gbengz123/personal-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gbengz123/personal-blog/issues"
+  },
+  "homepage": "https://github.com/Gbengz123/personal-blog#readme"
+}
