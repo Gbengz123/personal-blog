@@ -9,8 +9,8 @@
 
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true,
+    "skipLibCheck": true
   },
-  
+
   "exclude": ["prisma.config.ts"]
 }

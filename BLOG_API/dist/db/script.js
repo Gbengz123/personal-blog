@@ -1,5 +1,4 @@
 import prisma from './db.js';
-
 async function main() {
   await prisma.post.createMany({
     data: [
@@ -56,7 +55,6 @@ async function main() {
     ],
   });
 }
-
 main()
   .then(async () => {
     await prisma.$disconnect();

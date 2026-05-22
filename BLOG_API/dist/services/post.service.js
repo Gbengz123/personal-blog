@@ -1,12 +1,5 @@
 import prisma from '../db/db.js';
-import { Post } from '@prisma/client';
-
-interface GetPostsOptions {
-  published?: boolean;
-  id?: number;
-}
-
-export async function getPosts(options?: GetPostsOptions): Promise<Post[]> {
+export async function getPosts(options) {
   const posts = await prisma.post.findMany({
     where: {
       published: options?.published,
@@ -16,16 +9,13 @@ export async function getPosts(options?: GetPostsOptions): Promise<Post[]> {
       createdAt: 'desc',
     },
   });
-
   return posts;
 }
-
-export async function getPostById(id: number): Promise<Post | null> {
+export async function getPostById(id) {
   const post = await prisma.post.findUnique({
     where: {
       id: id,
     },
   });
-
   return post;
 }
