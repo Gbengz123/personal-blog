@@ -6,7 +6,7 @@ import commentsRouter from './admin.comments.routes.js';
 const adminRouter = Router();
 
 adminRouter.use('/posts', postsRouter);
-adminRouter.use(':postId/comments', commentsRouter);
+adminRouter.use('/:postId/comments', commentsRouter);
 adminRouter.use('/auth', authRouter);
 
 export default adminRouter;

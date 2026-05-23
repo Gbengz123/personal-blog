@@ -5,6 +5,6 @@ import userCommentsRouter from './user.comments.routes.js';
 const userRouter = Router();
 
 userRouter.use('/posts', userPostsRouter);
-userRouter.use(':postId/comments', userCommentsRouter);
+userRouter.use('/:postId/comments', userCommentsRouter);
 
 export default userRouter;
